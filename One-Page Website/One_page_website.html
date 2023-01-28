@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Italian Pizza</title>
+    <link rel="stylesheet" href="CSS/italian.css">
+    <meta charset="utf-8">
+  </head>
+<body>
+
+    <!--Nav-->
+  <nav>
+    <div class="wrap">
+      <div class="menu-container">
+        <ul class="menu">
+          <a href="#home"><li>HOME</li> </a>
+          <a href="#menu"><li>Menu</li> </a>
+          <a href="#reservations"><li>Contact</li> </a>
+        </ul>
+      </div>
+    </div>
+  </nav><!--End Nav-->
+  
+  <!--Home-->
+  <div id="home">
+    <div>
+      <div>
+        <h1><span>Italian Pizza</span></h1>
+      </div>
+    </div>
+  </div><!--End Home-->
+
+<!-- Menu Grid -->
+<div id="menu">
+  <h1>MENU</h1>
+
+<div class="row">
+  <div class="column">
+    <img src="./Images/Thumb/Cheese Pizza.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"><h3>Cheese Pizza</h3>
+      <p>Cheese pizza is one of the most popular choices. It will always be a simple, unadorned masterpiece on its own.</p>
+  </div>
+  <div class="column">
+    <img src="./Images/Thumb/Veggie Pizza.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"> <h3>Veggie Pizza
+    </h3>
+      <p>When you want to jazz up your cheese pizza with color and texture, veggies are the perfect topping. And you’re only limited by your imagination. Everything from peppers and mushrooms, to eggplant and onions make for an exciting and tasty veggie pizza.</p>
+  </div>
+  <div class="column">
+    <img src="./Images/Thumb/Pepperoni Pizza.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">  <h3>Pepperoni Pizza
+    </h3>
+      <p>There’s a reason this is one of the most popular types of pizza. Who doesn’t love biting into a crispy, salty round of pepperoni?</p>
+  </div>
+  <div class="column">
+    <img src="./Images/Thumb/Meat Pizza.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"> <h3>Meat Pizza</h3>
+      <p>If pepperoni just isn’t enough, and you’re looking for a pie with a bit more heft, a meat pizza is a perfect and popular choice. Pile on ground beef and sausage for a hearty meal.</p>
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./Images/Thumb/Cheese Pizza.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./Images/Thumb/Veggie Pizza.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./Images/Thumb/Pepperoni Pizza.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./Images/Thumb/Meat Pizza.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="./Images/Thumb/thumbnail_1.png" style="width:100%" onclick="currentSlide(1)" alt="Cheese Pizza">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./Images/Thumb/thumbnail_2.png" style="width:100%" onclick="currentSlide(2)" alt="Veggie Pizza">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./Images/Thumb/thumbnail_3.png" style="width:100%" onclick="currentSlide(3)" alt="Pepperoni Pizza">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./Images/Thumb/thumbnail_4.png" style="width:100%" onclick="currentSlide(4)" alt="Meat Pizza">
+    </div>
+  </div>
+</div>
+  
+<!-- END MENU GRID -->
+
+<section class="video">
+  <div style="text-align:center">
+    <h1>How to cook Pizza</h1>
+   <div> <iframe width="515" height="315" class="video"src="https://www.youtube.com/embed/_jOMIdietUQ"></iframe> 
+  </div>
+</section>
+
+<!-- END MAIN -->
+
+ <!--RSVP-->
+  <section id="reservations">
+    <div class="form-style-10">
+      <h1>Reservations!<span>Reserve Now!!.</span></h1>
+      <p class="rsvp-text">Provide us with your basic contact information.</p>
+      <form action="https://formspree.io/f/xpzezqpv" method="post">
+        <div class="section">
+          <span>1</span>First Name & Email
+        </div>
+        <div class="inner-wrap">
+          <label>Your Full Name <input type="text" name="field1"></label> <label>Email Address <input type="email" name="field2"></label>
+        </div>
+        <div class="section">
+          <span>2</span>Phone & Date
+        </div>
+        <div class="inner-wrap">
+          <label>Phone Number<input type="text" name="field3"></label> <label>Date <input type="text" name="field4"></label>
+        </div>
+        <div class="button-section">
+          <input type="submit" name="Sign Up"> <span class="privacy-policy"><input type="checkbox" name="field7">You agree to our Terms and Policy.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+    <!--END RSVP-->
+  <!--END RSVP-->
+  <!--Footer-->
+  <div id="footer">
+    www.italianpizza.com &nbsp;\&nbsp; ©2022
+  </div><!--End Footer-->
+  <script src="JS/one_page_website.js"></script>
+</body>
+</html>
+      <!--End Footer-->
+    </div>
+  </div>
+</body>
+</html>
