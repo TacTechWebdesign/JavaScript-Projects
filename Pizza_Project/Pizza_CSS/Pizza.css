@@ -1,0 +1,206 @@
+#home {
+    background: url(../image/cover.jpg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    display: block;
+    height:auto;
+    padding-top: 350px; /* This is spacer before the main title Logo */
+    padding-bottom: 500px; /* This spacer after the Main Title logo*/
+    color: #fff;
+}
+/* UTILITIES */
+
+* {
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box; 
+    }
+    
+body {
+    font-family: cursive;
+    background-color: teal
+     }
+    
+a { 
+    text-decoration: none;
+    }
+    
+li {
+    list-style: none;
+    
+    }
+
+/* Font Size */
+    h1 {
+        font-size: 70px;
+        text-align: center;
+      }
+      
+      h2 {
+        font-size: 30px;
+        color: white;
+    
+      }
+      
+      p {
+        font-size: 16px;
+      }
+
+/* NAVBAR STYLING STARTS */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    
+    }
+    
+.nav-links a {
+    color: #fff;
+    
+    }
+    
+    /* LOGO */
+    
+.logo {
+    font-size: 32px;
+     }
+    
+ /* NAVBAR MENU */
+    .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    }
+    
+.menu li:hover {
+    
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    }
+    
+.menu li {
+    padding: 5px 14px;
+    
+    }
+
+    * {
+        box-sizing: border-box;
+      }
+      
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 50px;
+        padding-left: 150px;
+        padding-right: 50px;
+        width: 33.33%;
+        height: 400px; /* Should be removed. Only for demonstration */
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      #totalPrice {
+        width:200px;
+        height:200px;
+        margin:100px auto;
+        float:right;
+        color: rgb(255, 255, 255);
+        }
+    
+    #showText {
+        width:200px;
+        height:150px;
+        margin:100px auto;
+        float:left;
+        }
+            
+    #cart {
+        top:0;margin:-100px auto;
+        width:400px;
+        height:auto;
+        text-align: center;
+        }
+        
+    #btnOrder {
+        margin:10px 10px 10px 100px;
+        width:200px;
+        height:50px;
+        display: block;
+        margin: 30px auto;
+        background-color:#ffa500;
+        color: aliceblue;
+        text-align: center;
+        font-size: 25px;
+        
+     }
+    
+        * {
+            box-sizing: border-box;
+          }
+
+          footer {
+            text-align: center;
+            padding: 3px;
+            background-color:rgb(0, 0, 0);
+            color: white;
+          }
+
+
+
+    /*-------------------------------------------------------
+   @MEDIA QUERIES
+--------------------------------------------------------*/
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+@media (max-width: 640px) and (min-width: 381px) {
+.menu { 
+    display: none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+    
+    }
+    
+.menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+    
+    }
+    
+    .menu li + li {
+        margin-top: 15px;
+    }
+}
+
+
